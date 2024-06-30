@@ -1,0 +1,29 @@
+{
+    "family": "sample-fargate",
+    "containerDefinitions": [
+        {
+            "name": "qna-langchain",
+            "image": "142988336966.dkr.ecr.us-east-1.amazonaws.com/qna_app:latest",
+            "cpu": 0,
+            "portMappings": [
+                {
+                    "containerPort": 8001,
+                    "hostPort": 8001,
+                    "protocol": "tcp"
+                }
+            ],
+            "essential": true,
+            "environment": [],
+            "mountPoints": [],
+            "volumesFrom": [],
+            "systemControls": []
+        }
+    ],
+    "executionRoleArn": "arn:aws:iam::142988336966:role/ecsTaskExecRole",
+    "networkMode": "awsvpc",
+    "requiresCompatibilities": [
+        "FARGATE"
+    ],
+    "cpu": "4096",
+    "memory": "16384"
+}

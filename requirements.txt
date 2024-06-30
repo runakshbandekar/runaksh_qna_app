@@ -1,0 +1,13 @@
+openai
+langchain
+langchain_openai
+langchain_experimental
+langchainhub
+pinecone-client
+python-dotenv
+pypdf
+streamlit
+tiktoken
+requests
+numpy
+pandas
